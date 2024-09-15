@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- USING THE MATTER JS LIBRARY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.20.0/matter.min.js"></script>
+    <title>Maze Game</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        height: 100vh;
+      }
+      .hidden {
+        display: none !important;
+      }
+      h1 {
+        font-family: "Times New Roman", Times, serif;
+        color: #fff;
+        font-size: 50px;
+        font-weight: 900;
+      }
+      .winner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 1;
+        height: 100vh;
+        width: 100vw;
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body style="background: #000">
+    <div class="winner hidden">
+      <h1>You Win!</h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
